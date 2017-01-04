@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="3D展示"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="图片展示"
+            android:button="@null"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="视频展示"
+            android:button="@null"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <com.liangshan.xf.circlemenu.activity_my.MyCircleMenuLayout
+        android:id="@+id/id_menulayout3D"
+        android:layout_below="@id/linear"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="100dp"
+        android:background="@mipmap/circle_bg3"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@id/id_circle_menu_item_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="104.0dip"
+                android:layout_height="104.0dip"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/turnplate_center_unlogin" />
+
+            <ImageView
+                android:layout_width="116.0dip"
+                android:layout_height="116.0dip"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/turnplate_mask_unlogin_normal" />
+        </RelativeLayout>
+    </com.liangshan.xf.circlemenu.activity_my.MyCircleMenuLayout>
+    <com.liangshan.xf.circlemenu.activity_my.MyCircleMenuLayout
+        android:id="@+id/id_menulayoutImage"
+        android:layout_below="@id/linear"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="100dp"
+        android:background="@mipmap/circle_bg3"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@id/id_circle_menu_item_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="104.0dip"
+                android:layout_height="104.0dip"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/turnplate_center_unlogin" />
+
+            <ImageView
+                android:layout_width="116.0dip"
+                android:layout_height="116.0dip"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/turnplate_mask_unlogin_normal" />
+        </RelativeLayout>
+    </com.liangshan.xf.circlemenu.activity_my.MyCircleMenuLayout>
+    <com.liangshan.xf.circlemenu.activity_my.MyCircleMenuLayout
+        android:id="@+id/id_menulayoutFlash"
+        android:layout_below="@id/linear"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="100dp"
+        android:background="@mipmap/circle_bg3"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@id/id_circle_menu_item_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="104.0dip"
+                android:layout_height="104.0dip"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/turnplate_center_unlogin" />
+
+            <ImageView
+                android:layout_width="116.0dip"
+                android:layout_height="116.0dip"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/turnplate_mask_unlogin_normal" />
+        </RelativeLayout>
+    </com.liangshan.xf.circlemenu.activity_my.MyCircleMenuLayout>
+
+</RelativeLayout>
